@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samal Velo | Bike rental in Astana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md sticky-top main-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Samal Velo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#tariffs">Tariffs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bikes">Our bikes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rules">Rental rules</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="py-5 hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <div class="col-12 col-lg-7 order-1 order-lg-2">
+        <h1 class="mb-3">Ride around Astana on two wheels</h1>
+        <p class="fs-5 mb-4">Rent a city, mountain or electric bike near the Esil embankment. Pick it up in five minutes, return it at any of our two points.</p>
+        <a href="#tariffs" class="btn btn-green me-2 mb-2">See tariffs</a>
+        <a href="#bikes" class="btn btn-outline-dark mb-2">Choose a bike</a>
+      </div>
+
+      <aside class="col-lg-5 order-2 order-lg-1 d-none d-md-block">
+        <div class="info-box p-4">
+          <h2 class="h5 mb-3">Today at the station</h2>
+          <p class="mb-1">Open 08:00 to 22:00</p>
+          <p class="mb-1">Free bikes now: 34</p>
+          <p class="mb-0">Helmets are free with any rental</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============ TASK 1: tariffs, own CSS only (no Bootstrap classes) ============ -->
+<section id="tariffs" class="tariffs">
+  <div class="tariffs__inner">
+    <h2 class="tariffs__title">Rental tariffs</h2>
+    <div class="tariffs__grid">
+      <article class="tariff"><h3>1 hour</h3><p>Good for a short ride along the embankment.</p><span>1 500 ₸</span></article>
+      <article class="tariff"><h3>3 hours</h3><p>Enough time for the left bank and the park.</p><span>3 500 ₸</span></article>
+      <article class="tariff"><h3>Full day</h3><p>From opening until closing, one bike.</p><span>7 000 ₸</span></article>
+      <article class="tariff"><h3>Weekend</h3><p>Saturday and Sunday, a discount for two days.</p><span>12 000 ₸</span></article>
+      <article class="tariff"><h3>Kids bike</h3><p>For children from 5 to 10 years, with a helmet.</p><span>from 1 000 ₸</span></article>
+      <article class="tariff"><h3>Group of 5</h3><p>Five bikes together with a guide for 2 hours.</p><span>20 000 ₸</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TASK 2: cards (Bootstrap) ============ -->
+<section id="bikes" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Our bikes</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+      <div class="col"><div class="card h-100 bike"><div class="card-body">
+        <h3 class="h5">City bike, 7 speeds</h3><p class="card-text">Comfortable seat and a basket on the front.</p>
+        <p class="cost mb-0">from 1 500 ₸ / hour</p></div></div></div>
+      <div class="col"><div class="card h-100 bike"><div class="card-body">
+        <h3 class="h5">Mountain bike, 21 speeds</h3><p class="card-text">Wide tires for the park paths and forest.</p>
+        <p class="cost mb-0">from 2 000 ₸ / hour</p></div></div></div>
+      <div class="col"><div class="card h-100 bike"><div class="card-body">
+        <h3 class="h5">Electric bike</h3><p class="card-text">Battery lasts about 50 km on one charge.</p>
+        <p class="cost mb-0">from 4 000 ₸ / hour</p></div></div></div>
+      <div class="col"><div class="card h-100 bike"><div class="card-body">
+        <h3 class="h5">Folding bike</h3><p class="card-text">Small wheels, easy to take on a bus.</p>
+        <p class="cost mb-0">from 1 800 ₸ / hour</p></div></div></div>
+      <div class="col"><div class="card h-100 bike"><div class="card-body">
+        <h3 class="h5">Tandem bike</h3><p class="card-text">Two seats, for a couple or a parent with a child.</p>
+        <p class="cost mb-0">from 3 000 ₸ / hour</p></div></div></div>
+      <div class="col"><div class="card h-100 bike"><div class="card-body">
+        <h3 class="h5">Kids bike, 20 inch</h3><p class="card-text">Light frame with training side wheels.</p>
+        <p class="cost mb-0">from 1 000 ₸ / hour</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="rules" class="py-5 rules">
+  <div class="container">
+    <h2 class="mb-4">Rental rules</h2>
+    <div class="accordion" id="rulesList">
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#r1">What do I need to rent a bike?</button></h3>
+        <div id="r1" class="accordion-collapse collapse show" data-bs-parent="#rulesList"><div class="accordion-body">An ID card or a passport and a deposit of 10 000 ₸. The deposit is returned when you bring the bike back.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#r2">Can I return the bike at another point?</button></h3>
+        <div id="r2" class="accordion-collapse collapse" data-bs-parent="#rulesList"><div class="accordion-body">Yes. We have two points in the city, and you can leave the bike at either one without extra payment.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#r3">What happens if it rains?</button></h3>
+        <div id="r3" class="accordion-collapse collapse" data-bs-parent="#rulesList"><div class="accordion-body">If you return the bike within 30 minutes because of rain, we do not charge for the hour.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="main-footer py-5">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <h2 class="h5">Contacts</h2>
+        <p class="mb-0">Turan Ave 12, Astana<br>+7 700 111 22 33<br>info@samalvelo.example</p>
+      </div>
+      <div class="col-12 col-md-6 text-md-end d-flex flex-column justify-content-end"><small>2026 Samal Velo</small></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

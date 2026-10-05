@@ -1,0 +1,43 @@
+body { font-family: Arial, Helvetica, sans-serif; color: #1b1b1b; background: #fff; font-size: 15px; }
+h1, h2, h3 { font-weight: bold; }
+h1 { font-size: 1.9rem; }
+
+.main-nav { background: #fff; border-bottom: 2px solid #2e7d32; }
+.main-nav .navbar-brand { color: #2e7d32; font-weight: bold; }
+.main-nav .nav-link { color: #1b1b1b; }
+.hero { background: #f1f8f1; border-bottom: 1px solid #cfe3cf; }
+.info-box { border: 1px solid #2e7d32; background: #fff; }
+.btn-green { background: #2e7d32; color: #fff; border: 1px solid #2e7d32; border-radius: 0; }
+.btn-green:hover { background: #1b5e20; color: #fff; }
+.btn-outline-dark { border-radius: 0; }
+.bike { border: 1px solid #cfe3cf; border-radius: 0; }
+.cost { font-weight: bold; color: #2e7d32; }
+.rules { border-top: 1px solid #cfe3cf; }
+.accordion-item { border-radius: 0; }
+.accordion-button { border-radius: 0; }
+.accordion-button:not(.collapsed) { background: #f1f8f1; color: #1b1b1b; box-shadow: none; }
+.main-footer { border-top: 2px solid #2e7d32; background: #f1f8f1; }
+
+/* ===== TASK 1: tariffs section, own CSS, mobile-first ===== */
+
+.tariffs { padding: 1.5rem 1rem; }
+.tariffs__inner { max-width: 1200px; margin: 0 auto; }
+.tariffs__title { font-size: 1.3rem; margin-bottom: 1rem; text-align: left; }
+.tariffs__grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
+.tariff { border: 1px solid #cfe3cf; padding: .75rem; }
+.tariff h3 { font-size: 1rem; margin: 0 0 .25rem; }
+.tariff p { margin: 0 0 .5rem; }
+.tariff span { font-weight: bold; color: #2e7d32; }
+
+@media (min-width: 768px) {
+  .tariffs { padding: 2rem; }
+  .tariffs__title { font-size: 1.6rem; }
+  .tariffs__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .tariffs { padding: 2.5rem 3rem; }
+  .tariffs__title { font-size: 1.9rem; text-align: center; }
+  .tariffs__grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .tariff { padding: 1rem; }
+}
